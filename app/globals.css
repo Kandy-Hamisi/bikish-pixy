@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*.glass-container {*/
+/*    background: rgba(255, 255, 255, 0.1); !* Transparent white *!*/
+/*    backdrop-filter: blur(10px); !* Blur effect *!*/
+/*    border-radius: 15px; !* Smooth corners *!*/
+/*    border: 1px solid rgba(255, 255, 255, 0.2); !* Subtle border *!*/
+/*    padding: 20px;*/
+/*    width: 300px; !* Adjust width *!*/
+/*    height: 180px; !* Adjust height *!*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    position: relative;*/
+/*    color: white;*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); !* Soft shadow *!*/
+/*}*/
+
+
+.clipper {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 85% 100%, 15% 100%, 0% 90%);
+}
