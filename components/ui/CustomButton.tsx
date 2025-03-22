@@ -38,6 +38,7 @@ const CustomButton = ({
   className,
   bgVariant = "primary",
   textVariant = "default",
+  IconRight,
   ...props
 }: ButtonProps) => {
   return (
@@ -46,9 +47,14 @@ const CustomButton = ({
       className={`w-full rounded-full p-3 flex flex-row justify-center items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
       {...props}
     >
-      <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>
-        {title}
-      </Text>
+      {title && (
+        <Text
+          className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}
+        >
+          {title}
+        </Text>
+      )}
+      {IconRight && <IconRight />}
     </Pressable>
   );
 };

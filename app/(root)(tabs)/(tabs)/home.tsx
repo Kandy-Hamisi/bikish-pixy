@@ -18,37 +18,25 @@ const Home = () => {
         </Pressable>
       </View>
       {/*The Bike on Offer*/}
-      {/*<View className="w-[350px] mx-auto mt-8 relative clipper bg-darkBlue rounded-[30px] overflow-hidden">*/}
-      {/*  <BlurView*/}
-      {/*    intensity={90}*/}
-      {/*    experimentalBlurMethod="dimezisBlurView"*/}
-      {/*    className="absolute top-0 left-0 bottom-0 right-0 clipper"*/}
-      {/*  />*/}
-      {/*  <View className="justify-center items-center p-[20px]">*/}
-      {/*    <Image*/}
-      {/*      source={bigBike}*/}
-      {/*      resizeMode="contain"*/}
-      {/*      className="w-[300px] h-[200px] mb-4"*/}
-      {/*    />*/}
-      {/*    <Text className="text-2xl self-start text-white font-bold">*/}
-      {/*      30% Off*/}
-      {/*    </Text>*/}
-      {/*  </View>*/}
-      {/*</View>*/}
-      <ImageBackground
-        source={bgSkew}
-        resizeMode="contain"
-        className="overflow-hidden h-[300px] w-[350px] flex items-center justify-center"
-      >
-        <Image
-          source={bigBike}
-          resizeMode="contain"
-          className="w-[300px] h-[200px] mb-4"
-        />
-        <Text className="text-2xl self-start text-white font-bold">
-          30% Off
-        </Text>
-      </ImageBackground>
+      <View className="mt-8 relative mx-auto bg-darkBlue rounded-[30px] overflow-hidden">
+        {/*<BlurView*/}
+        {/*  intensity={90}*/}
+        {/*  experimentalBlurMethod="dimezisBlurView"*/}
+        {/*  className="absolute top-0 left-0 bottom-0 right-0 clipper"*/}
+        {/*/>*/}
+        <View className="justify-center items-center p-[20px]">
+          <Image
+            source={bigBike}
+            resizeMode="contain"
+            className="w-[300px] h-[150px] mb-4"
+          />
+          <Text className="text-2xl self-start text-white font-bold">
+            30% Off
+          </Text>
+        </View>
+      </View>
+
+      {/*    icons to select products */}
     </SafeAreaView>
   );
 };
